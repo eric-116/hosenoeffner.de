@@ -13,16 +13,16 @@ document.addEventListener('keydown', function (event) {
         console.log(pressedKey);
         full_word += pressedKey;
         if (full_word.endsWith("HOSENOEFFNER")) {
-            // faster blinking: tweak these values to change speed
             const blinkCount = 10;
-            const greenDuration = 120; // ms
+            const yellowDuration = 120; // ms
             const redDuration = 120; // ms
-            const cycle = greenDuration + redDuration;
+            const cycle = yellowDuration + redDuration;
+            var audio = new Audio('../audios/powerstar.mp3');
+            audio.play();
             for (let i = 0; i < blinkCount; i++) {
-                setTimeout(() => { document.body.style.backgroundColor = "green"; }, i * cycle);
-                setTimeout(() => { document.body.style.backgroundColor = "red"; }, i * cycle + greenDuration);
+                setTimeout(() => { document.body.style.backgroundColor = "yellow"; }, i * cycle);
+                setTimeout(() => { document.body.style.backgroundColor = "red"; }, i * cycle + yellowDuration);
             }
-            // restore original background after all cycles complete
             setTimeout(() => {
                 document.body.style.backgroundColor = originalBg;
                 full_word = "";
