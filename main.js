@@ -17,7 +17,7 @@ document.addEventListener('keydown', function (event) {
             const yellowDuration = 120; // ms
             const redDuration = 120; // ms
             const cycle = yellowDuration + redDuration;
-            var audio = new Audio('../audios/powerstar.mp3');
+            var audio = new Audio('../sounds/powerstar.mp3');
             audio.play();
             for (let i = 0; i < blinkCount; i++) {
                 setTimeout(() => { document.body.style.backgroundColor = "yellow"; }, i * cycle);

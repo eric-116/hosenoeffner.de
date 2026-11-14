@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimGioH lowkey Aura</title>
+</head>
+<body>
+    <video id="videoPlayer" src="../videos/TimGiOh.mp4" autoplay style="width: 100%; height: auto;"></video>
+    <script>
+        const video = document.getElementById('videoPlayer');
+        video.addEventListener('ended', () => {
+            window.location.href = '../timgioh.html';
+        });
+    </script>
+</body>
+</html>

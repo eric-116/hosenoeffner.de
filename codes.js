@@ -9,6 +9,6 @@ submit_btn.addEventListener("click", (event) => {
         window.location.href = "./hosenöffner.html"
     }
     if (input_txt.value === "timgioh") {
-        window.location.href = "./hosenöffner.html"
+        window.location.href = "./timgioh.html"
     }
 })

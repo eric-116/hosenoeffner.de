@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimGiOh</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+        footer {
+            left: 20px;
+            bottom: 20px;
+            position: fixed;
+            display: flex;      /* Knöpfe nebeneinander */
+            gap: 10px;          /* Abstand zwischen den Knöpfen */
+        }
+        .btn {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 200%;
+}
+    </style>
+</head>
+
+<body>
+    <h1>TimGiOh Seite</h1>
+    <img src="../images/timgioh.png" alt="Bild von TimGiOh">
+
+    <footer>
+        <a class="btn "href="timgioh_video.html">Tuffes Video</a>
+        <input type="button" id="sound1" class="btn" value="Sound1 abspielen">
+        <input type="button" id="sound2" class="btn" value="Sound2 abspielen">
+    </footer>
+
+    <script src="../timgioh_sounds.js"></script>
+</body>
+</html>
