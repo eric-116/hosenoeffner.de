@@ -1,0 +1,98 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            margin: 0;
+            min-height: 96vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        main {
+            flex: 1;
+            font-size: 200%;
+        }
+        .hero-row {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .hero-row h1,
+        .hero-row p {
+            margin: 0;
+        }
+        .site-footer {
+            padding: 12px 0;
+            color: #ffffff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 300%;
+            margin: 0 20px;
+            
+        }
+        .secretbtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 100%;
+            margin: 20px 0;
+            opacity:0;
+            transition:0.3s;
+        }
+        a {
+            color: #00b3ff;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        img {
+            user-select: none;
+        }
+        .logo {
+            font-size: 200%;
+            color: #11c7ff;
+            font-family: 'Courier New', Courier, monospace, sans-serif; 
+        }
+        .button {
+            padding: 25px 70px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: white;
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            }
+
+            .button:hover {
+            letter-spacing: 4.5px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #0053ab 0px 7px 29px 0px;
+            }
+
+            .button:active {
+            letter-spacing: 3px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #007bff 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+            }

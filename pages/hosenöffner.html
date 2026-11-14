@@ -30,15 +30,36 @@
         h1 {
             margin: 0;
         }
-        .btn {
-            display: inline-block;
-            padding: 20px 40px;
-            background-color: #007bff;
-            color: #fff;
+        .button {
+            padding: 25px 70px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: white;
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 200%;
-        }
+            color: rgb(0, 0, 0);
+            }
+
+            .button:hover {
+            letter-spacing: 4.5px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #0053ab 0px 7px 29px 0px;
+            }
+
+            .button:active {
+            letter-spacing: 3px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #007bff 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+            }
         a {
             color: #00b3ff;
         }
@@ -66,7 +87,7 @@
         <p>Ich mag Hosenöffner</p>
     </main>
     <footer class="site-footer">
-        <a href="../index.html" class="btn">Return</a>
+        <a href="../index.html" class="button">Return</a>
     </footer>
 </body>
 </html>

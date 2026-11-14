@@ -30,25 +30,47 @@
         h1 {
             margin: 0;
         }
-        .btn {
-            display: inline-block;
-            padding: 20px 40px;
-            background-color: #007bff;
-            color: #fff;
+        .button {
+            padding: 25px 70px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: white;
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 150%;
+            transition: all 0.5s ease;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 200%;
-        }
-        .input[type="text"] {
+            color: rgb(0, 0, 0);
+            }
+
+            .button:hover {
+            letter-spacing: 4.5px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #0053ab 0px 7px 29px 0px;
+            }
+
+            .button:active {
+            letter-spacing: 3px;
+            background-color: #007bff;
+            color: hsl(0, 0%, 100%);
+            box-shadow: #007bff 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+            }
+        .input {
             display: inline-block;
-            padding: 20px 40px;
+            padding: 25px 85px;
             background-color: #ffffff;
             color: #000000;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 200%;
+            border-radius: 50px;
+            font-size: 150%;
             margin-right: 10px;
         }
+        
         a {
             color: #00b3ff;
         }
@@ -82,9 +104,9 @@
 <body>
     <form class="align-center">
         <input type="text" id="codeInput" placeholder="Enter secret code..." class="input">
-        <input type="submit" id="submitCode" value="Submit Code" class="btn" styles="margin-left: 40px;">
+        <input type="submit" id="submitCode" value="Submit Code" class="button" styles="margin-left: 40px;">
     </form>
-    <div class="anchored"><a href="../index.html" class="btn" style="padding: 30px 60px; font-size: 300%">Return</a></div>
+    <div class="anchored"><a href="../index.html" class="button" style="font-size: 100%;">Return</a></div>
     <script src="../codes.js"></script>
 </body>
 </html>
