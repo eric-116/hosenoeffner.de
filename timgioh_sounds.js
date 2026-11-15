@@ -13,6 +13,9 @@ sound1.addEventListener("click", () => {
         audio1 = new Audio('../sounds/timgioh_song.mp3')
     }
 })
+audio1.addEventListener("ended", () => {
+    sound1.value = "Sound1 abspielen"
+})
 sound2.addEventListener("click", () => {
     if (audio2.paused) {
         audio2.play()
@@ -26,7 +29,4 @@ sound2.addEventListener("click", () => {
 })
 audio2.addEventListener("ended", () => {
     sound2.value = "Sound2 abspielen"
-})
-audio1.addEventListener("ended", () => {
-    sound1.value = "Sound1 abspielen"
 })
